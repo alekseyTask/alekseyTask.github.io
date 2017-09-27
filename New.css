@@ -1,0 +1,69 @@
+#menu{
+    height: 100vh;
+    width: 256px;
+    background-color: rgb(77, 57, 75);
+    position: static;
+    left: 0px;
+    Top:0px;
+}
+
+#top{
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#low{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#companyName{
+    color:azure;
+    margin-bottom: 5px;
+}
+
+#threads>h3{
+    color:rgb(185, 187, 187);
+}
+
+#threads:hover{
+    background-color: rgb(62, 49, 60);
+}
+body{
+    font-family: Slack-Lato,appleLogo,sans-serif;
+    color: rgb(202, 202, 202);
+}
+.Shadow:not(.activ):hover{
+    background-color: rgb(62, 49, 60);
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    }
+
+.flex-item {
+display: -webkit-inline-flex;
+ display: inline-flex; 
+    }
+
+.R1{
+    font-size: 11pt;
+}
+.ch1{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.ch2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ch3{
+    margin-top:20px;
+}
+.activ{
+    background-color: rgb(76, 150, 137);
+    color: rgb(245,245,245);
+}
