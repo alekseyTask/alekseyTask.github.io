@@ -1,10 +1,14 @@
 #menu{
     height: 100vh;
-    width: 235px;
+    width: 220px;
+    min-width: 220px;
     background-color: rgb(77, 57, 75);
     position: static;
     left: 0px;
     Top:0px;
+
+    font-size: 12pt;
+    color: rgb(202, 202, 202);
 }
 
 #top{
@@ -19,7 +23,7 @@
     bottom: 0px;
     left: 0px;
     height: 60px;
-    width: 235px;
+    width: 220px;
 }
 
 #companyName{
@@ -36,8 +40,6 @@
 }
 body{
     font-family: Slack-Lato,appleLogo,sans-serif;
-    font-size: 12pt;
-    color: rgb(202, 202, 202);
 }
 .Shadow:not(.activ):hover{
     background-color: rgb(62, 49, 60);
@@ -45,6 +47,7 @@ body{
 .flex-container {
     display: -webkit-flex;
     display: flex;
+    justify-content: flex-start;
     }
 
 .flex-item {
@@ -102,4 +105,79 @@ display: -webkit-inline-flex;
 .imgc1{
     margin-top: 13px;
     src:"quick_switcher_ns.png";
+}
+.flex-container {
+    display: -webkit-flex; 
+    display: flex; /*отображает контейнер как блочный элемент*/
+}
+#articleMessage{
+    padding-left: 15px;
+    padding-top: 45px;
+    font-size: 13pt;
+}
+.articleText{
+    color:rgb(44,45,48);
+}
+.sprt{
+    color: grey;
+}
+.btn1{
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(5,137,208);
+    font-size: 10.5pt;
+    margin-bottom: 16px;
+    margin-right: 16px;
+}
+.sprt{
+    margin-top: 4px;
+    margin-bottom: 4px; 
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+}
+.line{
+    width:50%;
+}
+.mainHolst{
+    width:100%;
+}
+.topHolst{
+    padding-left: 15px;
+    padding-top:10px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(232, 232, 232);
+    border-bottom-style: solid;
+    padding-bottom: 8px;
+}
+.smallic{
+    color:rgb(113,114,116);
+    font-size: 10pt;
+}
+.topHolstRight{
+    position:absolute;
+    right:0;
+    top:0;
+    padding-top:10px;
+    padding-right: 15px;
+    font-size:17pt;
+    color:rgb(113,114,116);
+}
+input{
+    border-radius: 5px;
+    height: 33px;
+    width: 300px;
+    border-style: solid;
+    border-color: rgb(113,114,116);
+    border-width: 1px;
+}
+#date{
+    min-width: max-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 10pt;
+    color:black;
+}
+.inputMessage{
+    
 }
