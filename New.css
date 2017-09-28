@@ -1,6 +1,6 @@
 #menu{
     height: 100vh;
-    width: 256px;
+    width: 235px;
     background-color: rgb(77, 57, 75);
     position: static;
     left: 0px;
@@ -34,6 +34,7 @@
 }
 body{
     font-family: Slack-Lato,appleLogo,sans-serif;
+    font-size: 12pt;
     color: rgb(202, 202, 202);
 }
 .Shadow:not(.activ):hover{
@@ -53,8 +54,8 @@ display: -webkit-inline-flex;
     font-size: 11pt;
 }
 .ch1{
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
 }
 .ch2{
     padding-left: 20px;
@@ -66,4 +67,26 @@ display: -webkit-inline-flex;
 .activ{
     background-color: rgb(76, 150, 137);
     color: rgb(245,245,245);
+}
+.bright:hover{
+    color:white;
+}
+.first{
+    margin-top:4px;
+}
+.ic1{
+    color: rgb(137,124,137);
+}
+.ic2{
+    color: rgb(190,217,212);
+}
+.ic3{
+    color: rgb(56,141,151);
+}
+.ic4{
+    font-size: 9pt;
+}
+
+#menu>div:hover{
+    cursor: pointer;
 }
