@@ -18,6 +18,8 @@
     position: absolute;
     bottom: 0px;
     left: 0px;
+    height: 60px;
+    width: 235px;
 }
 
 #companyName{
@@ -68,6 +70,9 @@ display: -webkit-inline-flex;
     background-color: rgb(76, 150, 137);
     color: rgb(245,245,245);
 }
+.warning{
+    color: rgb(245,245,245);
+}
 .bright:hover{
     color:white;
 }
@@ -86,7 +91,15 @@ display: -webkit-inline-flex;
 .ic4{
     font-size: 9pt;
 }
+.ic5{
+    font-size: 15pt;
+}
 
-#menu>div:hover{
+.pen:hover{
     cursor: pointer;
+}
+
+.imgc1{
+    margin-top: 13px;
+    src:"quick_switcher_ns.png";
 }
