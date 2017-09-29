@@ -59,7 +59,7 @@
                     <span>☎</span>
                     <span>ⓘ</span>
                     <span>🛠</span>
-                    <input type="text" name="lname" placeholder=" 🔍 Search">
+                    <input id="inputFind" type="text" name="lname" placeholder=" 🔍 Search">
                     <span>@</span>
                     <span>☆</span>
                     <span>⋮</span>
@@ -86,9 +86,14 @@
             </div>
         </div>
         <div class="inputMessage">
-            <div id="inpudDiv">
+            <div id="inpudDiv" class="flex-container">
                 <div id="inputDivPlus">
-                       <center>+</center> 
+                       <center><span>+</span></center>
+                </div>
+                <input id="inputText" type="text" name="lname" placeholder=" Message #net">
+                <div id="MessageTextBtns" class="flex-container">
+                    <div id="simbolAt" class="pen">@</div>
+                    <div id="simbolSml" class="pen">☺</div>
                 </div>
             </div>
         </div>

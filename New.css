@@ -48,7 +48,7 @@ body{
     display: -webkit-flex;
     display: flex;
     justify-content: flex-start;
-    }
+}
 
 .flex-item {
 display: -webkit-inline-flex;
@@ -106,10 +106,6 @@ display: -webkit-inline-flex;
     margin-top: 13px;
     src:"quick_switcher_ns.png";
 }
-.flex-container {
-    display: -webkit-flex; 
-    display: flex; /*отображает контейнер как блочный элемент*/
-}
 #articleMessage{
     padding-left: 15px;
     padding-top: 45px;
@@ -163,7 +159,7 @@ display: -webkit-inline-flex;
     font-size:17pt;
     color:rgb(113,114,116);
 }
-input{
+#inputFind{
     border-radius: 5px;
     height: 33px;
     width: 300px;
@@ -200,11 +196,45 @@ input{
 }
 #inputDivPlus{
     width: 40px;
-    height: 42px;
+    height: 37px;
+    max-height: 42px;
     border-right-color: rgb(188,188,188);
     border-right-width: 2px;
     border-right-style: solid;
     color:rgb(160,160,160);
-    font-size:21pt;
+    font-size:20pt;
+    padding-top: 5px;
 
+}
+#MessageTextBtns{
+    color:rgb(113,114,116);
+}
+#simbolAt{
+    padding-top: 7px;
+    font-size: 16pt;
+}
+#simbolSml{
+    font-size:22pt;
+}
+#inputText{
+    width:100%;
+    font-size: 12pt;
+    border-width: 0px;
+}
+#simbolAt:hover{
+ color: rgb(5,118,185);
+ font-size: 18pt;
+ padding-top: 4px;
+}
+
+#simbolSml:hover{
+    font-size:24pt;
+    color:#DDA200;
+
+}
+#inputDivPlus:hover{
+    background-color: rgb(86,182,139);
+    color:white;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
