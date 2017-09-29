@@ -137,6 +137,9 @@ display: -webkit-inline-flex;
 }
 .mainHolst{
     width:100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 66px;
 }
 .topHolst{
     padding-left: 15px;
@@ -145,6 +148,8 @@ display: -webkit-inline-flex;
     border-bottom-color: rgb(232, 232, 232);
     border-bottom-style: solid;
     padding-bottom: 8px;
+    max-height: 60px;
+    box-sizing: border-box;
 }
 .smallic{
     color:rgb(113,114,116);
@@ -179,6 +184,9 @@ display: -webkit-inline-flex;
     border-top-width: 1px;
     border-top-style: solid;
     border-top-color: rgb(232,232,232);
+    max-height: 66px;
+    box-sizing: border-box;
+
 }
 #inpudDiv{
     box-sizing:border-box;
@@ -208,6 +216,9 @@ display: -webkit-inline-flex;
 }
 #MessageTextBtns{
     color:rgb(113,114,116);
+    width:65px;
+    display: flex;
+    justify-content: space-between;
 }
 #simbolAt{
     padding-top: 7px;
@@ -215,6 +226,7 @@ display: -webkit-inline-flex;
 }
 #simbolSml{
     font-size:22pt;
+    margin-right: 5px;
 }
 #inputText{
     width:100%;
@@ -223,18 +235,32 @@ display: -webkit-inline-flex;
 }
 #simbolAt:hover{
  color: rgb(5,118,185);
- font-size: 18pt;
+ font-size: 18pt; 
  padding-top: 4px;
+ transition-duration: 200ms;
+ transition-property: all;
+ transition-timing-function: linear;
 }
 
 #simbolSml:hover{
     font-size:24pt;
     color:#DDA200;
-
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: linear;
 }
 #inputDivPlus:hover{
     background-color: rgb(86,182,139);
     color:white;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
+}
+.chats{
+    height:100%;
+    overflow: auto;
+}
+#actvWin{
+    position:fixed;
+    bottom:0;
+    right: 0;
 }
