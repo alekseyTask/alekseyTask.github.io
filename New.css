@@ -45,15 +45,9 @@ body{
     background-color: rgb(62, 49, 60);
 }
 .flex-container {
-    display: -webkit-flex;
     display: flex;
     justify-content: flex-start;
 }
-
-.flex-item {
-display: -webkit-inline-flex;
- display: inline-flex; 
-    }
 
 .R1{
     font-size: 11pt;
@@ -126,17 +120,17 @@ display: -webkit-inline-flex;
     margin-right: 16px;
 }
 .sprt{
-    margin-top: 4px;
-    margin-bottom: 4px; 
-    display: -webkit-flex;
+    margin-top: 20px;
+    margin-bottom: 10px; 
     display: flex;
     justify-content: flex-start;
+    color: rgb(232,232,232);
 }
 .line{
     width:50%;
 }
 .mainHolst{
-    width:100%;
+    /* width:100%; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 1fr 66px;
@@ -172,7 +166,7 @@ display: -webkit-inline-flex;
     border-color: rgb(113,114,116);
     border-width: 1px;
 }
-#date{
+.dateMsgs{
     min-width: max-content;
     min-width: -moz-max-content;
     margin-left: 5px;
@@ -186,7 +180,10 @@ display: -webkit-inline-flex;
     border-top-color: rgb(232,232,232);
     max-height: 66px;
     box-sizing: border-box;
-
+    padding-bottom: 10px;
+    bottom:  0px;
+    right: 0px;
+    width: auto;
 }
 #inpudDiv{
     box-sizing:border-box;
@@ -235,19 +232,18 @@ display: -webkit-inline-flex;
 }
 #simbolAt:hover{
  color: rgb(5,118,185);
- font-size: 18pt; 
- padding-top: 4px;
  transition-duration: 200ms;
  transition-property: all;
  transition-timing-function: linear;
+ transform: scale(1.25,1.25);
 }
 
 #simbolSml:hover{
-    font-size:24pt;
     color:#DDA200;
     transition-duration: 200ms;
     transition-property: all;
     transition-timing-function: linear;
+    transform: scale(1.25,1.25);
 }
 #inputDivPlus:hover{
     background-color: rgb(86,182,139);
@@ -256,11 +252,54 @@ display: -webkit-inline-flex;
     border-top-left-radius: 4px;
 }
 .chats{
-    height:100%;
-    overflow: auto;
+    overflow-y: scroll;
 }
 #actvWin{
+    font-family:Arial, Helvetica, sans-serif;
     position:fixed;
     bottom:0;
-    right: 0;
+    right: 50px;
+    width: 240px;
+    padding-bottom: 5px;
+    font-size: 11.5pt;
+    color:rgb(190,190,190);
+    font-style: normal;
+}
+#actvWin>span{
+    font-size:14pt;
+}
+.msg{
+    padding-top:10px;
+    font-size: 11pt;
+    padding-left:25px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-column-gap: 5px;
+
+}
+.msgTime{
+    color: rgb(114,114,114);
+    font-size: 9pt;
+}
+.msgSText{
+    color: rgb(114,114,114);
+    font-size: 10.5pt;
+    line-height:1.5;
+}
+.msgText{
+    color: black;
+    font-size: 10.5pt;
+    line-height:1.5;
+}
+.avatar{
+    border-width: 0px;
+    border-radius: 3px;
+}
+.window{
+    position:fixed;
+    height: 100%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 100%;
 }
