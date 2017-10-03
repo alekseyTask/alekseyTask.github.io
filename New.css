@@ -148,15 +148,83 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.topHolstLeft{
+    display: flex;
+    justify-content: flex-start;
+}
 .smallic{
     color:rgb(113,114,116);
     font-size: 10pt;
 }
+.smallic:hover{
+    color:rgb(5,122,189);
+    cursor: pointer;
+}
+.rzdTHL{
+    margin-top:5px;
+    margin-left:4px;
+    margin-right:4px;
+    width: 1px;
+    height: 10px;
+    background-color:rgb(113,114,116);
+}
+.starTHL{
+    margin-top:-5px;
+    font-size: 14pt;
+}
+.starTHL:hover{
+    color:rgb(255,204,82);
+    cursor: pointer;
+}
+.smallicAT{
+    margin-right:2px;
+    padding-left:2px;
+    padding-right: 2px;
+    padding-top:2px;
+    padding-bottom: 4px;
+    color:rgb(113,114,116);
+    font-size: 10pt;
+    margin-left: 3px;
+    border:1px solid rgba(232,232,232,0);
+    border-radius: 3px;
+}
+.smallicAT:hover{
+    cursor: pointer;
+    border-color: rgb(232,232,232);
+}
+#smallhide{
+    padding-top: 3px;
+    font-size: 10pt;
+    color:rgba(29,118,192,0);
+}
+.smallicAT:hover+#smallhide{
+    color:rgb(29,118,192);
+}
 .topHolstRight{
     padding-top:10px;
     padding-right: 15px;
+    padding-bottom: 15px;
     font-size:17pt;
     color:rgb(113,114,116);
+    display: flex;
+    justify-content:flex-start;
+}
+.topHolstRight>*{
+    padding-left:5px;
+    padding-right: 5px;
+    min-height: 32px;
+    align-self: center;
+}
+#phoneTHR{
+    color:rgb(232, 232, 232);
+}
+#helpTHR{
+    background-color: rgb(232, 232, 232);
+    border-radius: 4px;
+    color:black;
+}
+#setttingsTHR:hover{
+    color:rgb(5,122,189);
 }
 #inputFind{
     border-radius: 5px;
@@ -165,6 +233,24 @@ body{
     border-style: solid;
     border-color: rgb(113,114,116);
     border-width: 1px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+#atTHD{
+    font-size:15pt;
+    padding-top:6px;
+}
+#atTHD:hover{
+    color:rgb(215,43,75);
+}
+#starTHD:hover{
+    color:rgb(255,204,82);
+}
+#moreTHD{
+    padding-top:6px;
+}
+#moreTHD:hover{
+    color:rgb(29,118,192);
 }
 .dateMsgs{
     min-width: max-content;
@@ -307,7 +393,8 @@ body{
     "menu msg about";
 }
 #firstAB{
-    height: 60px;
+    /* height: 60px; */
+    padding-bottom: 18px;
     border-bottom-width: 1px;
     border-bottom-color:rgb(232,232,232);
     border-bottom-style: solid;
@@ -317,7 +404,8 @@ body{
     background-color: rgb(249,249,249);
 }
 .typicalAB{
-    height: 60px;
+    /* height: 60px; */
+    padding-bottom: 18px;
     border-bottom-width: 1px;
     border-bottom-color:rgb(232,232,232);
     border-bottom-style: solid;
@@ -326,9 +414,7 @@ body{
     box-sizing: border-box;
     color:rgb(146,146,146);
     font-size: 14pt;
-}
-.typicalAB>p{
-    color:black;
+    outline: 0;
 }
 .typicalABblock{
     height: 100%;
@@ -336,6 +422,12 @@ body{
 }
 .info{
     padding-top: 10px;
+    font-size: 10.5pt;
+    color:rgb(114,114,114);
+    padding-right: 10px;
+}
+typicalAB:focus{
+    outline: 0;
 }
 .msg:hover{
     background-color: rgb(249,249,249);
