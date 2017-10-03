@@ -9,6 +9,7 @@
 
     font-size: 12pt;
     color: rgb(202, 202, 202);
+    grid-area:menu;
 }
 
 #top{
@@ -129,12 +130,6 @@ body{
 .line{
     width:50%;
 }
-.mainHolst{
-    /* width:100%; */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 1fr 66px;
-}
 .topHolst{
     padding-left: 15px;
     padding-top:10px;
@@ -144,6 +139,7 @@ body{
     padding-bottom: 8px;
     max-height: 60px;
     box-sizing: border-box;
+    grid-area: header;
 }
 .smallic{
     color:rgb(113,114,116);
@@ -184,6 +180,7 @@ body{
     bottom:  0px;
     right: 0px;
     width: auto;
+    grid-area:msg;
 }
 #inpudDiv{
     box-sizing:border-box;
@@ -253,17 +250,7 @@ body{
 }
 .chats{
     overflow-y: scroll;
-}
-#actvWin{
-    font-family:Arial, Helvetica, sans-serif;
-    position:fixed;
-    bottom:0;
-    right: 50px;
-    width: 240px;
-    padding-bottom: 5px;
-    font-size: 11.5pt;
-    color:rgb(190,190,190);
-    font-style: normal;
+    grid-area: chat;
 }
 #actvWin>span{
     font-size:14pt;
@@ -295,11 +282,21 @@ body{
     border-width: 0px;
     border-radius: 3px;
 }
+#aboutBlock{
+    grid-area:about;
+    border-width: 1px;
+    border-color:rgb(232,232,232);
+    border-style: solid;
+}
 .window{
     position:fixed;
     height: 100%;
     width:100%;
     display: grid;
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: 100%;
+    grid-template-columns: 220px 1fr 280px;
+    grid-template-rows: 60px 1fr 66px;
+    grid-template-areas: 
+    "menu header header" 
+    "menu chat about"
+    "menu msg about";
 }
