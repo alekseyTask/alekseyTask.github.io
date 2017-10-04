@@ -464,6 +464,9 @@ body{
     height: 100%;
     overflow-y: auto;
 }
+.typicalABblock>details>summary:hover{
+    cursor: pointer;
+}
 summary>.fa-arrows{
     color:rgb(29,118,192);
 }
