@@ -11,27 +11,36 @@
     color: rgb(202, 202, 202);
     grid-area:menu;
 }
-
 #top{
     height: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
 }
-
 #low{
     position: absolute;
     bottom: 0px;
     left: 0px;
     height: 60px;
     width: 220px;
+    background-color: rgb(77, 57, 75);
 }
-
 #companyName{
     color:azure;
     margin-bottom: 5px;
+    display: block;
 }
-
+.Frght{
+    float: right;
+    color: rgb(127,119,125);
+    padding-top:3px;
+}
+.faplus{
+    padding-right: 20px;
+}
+#menu .fa:hover{
+    color:rgb(184,176,183);
+}
 #threads>h3{
     color:rgb(185, 187, 187);
 }
@@ -197,6 +206,9 @@ body{
     font-size: 10pt;
     color:rgba(29,118,192,0);
 }
+#smallhide:hover{
+    color:rgb(29,118,192);
+}
 .smallicAT:hover+#smallhide{
     color:rgb(29,118,192);
 }
@@ -354,7 +366,7 @@ body{
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-column-gap: 5px;
-
+    position: relative;    
 }
 .msgTime{
     color: rgb(114,114,114);
@@ -374,6 +386,36 @@ body{
     border-width: 0px;
     border-radius: 3px;
 }
+.btnMsg{
+    /* display:none; */
+    display:none;
+    width: 115px;
+    height: 30px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  rgb(232,232,232);
+    position:absolute;
+    top:-5px;
+    right:20px;
+    background-color: white;
+}
+.btnMsg>div{
+    align-self: center;
+    color:rgb(115,115,115);
+    flex-grow:1;
+}
+.btnMsg>div:hover{
+    color: rgb(5,118,185);
+}
+.msg:hover .btnMsg{
+    display:flex;
+}
+/* .btnMsg>.gr{
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color:  rgb(232,232,232);
+} */
 #aboutBlock{
     grid-area:about;
     border-width: 1px;
@@ -398,6 +440,7 @@ body{
     border-bottom-width: 1px;
     border-bottom-color:rgb(232,232,232);
     border-bottom-style: solid;
+    padding-right: 10px;
     padding-top:18px;
     padding-left:10px;
     box-sizing: border-box;
@@ -411,6 +454,7 @@ body{
     border-bottom-style: solid;
     padding-top:18px;
     padding-left:10px;
+    padding-right: 5px; 
     box-sizing: border-box;
     color:rgb(146,146,146);
     font-size: 14pt;
@@ -420,15 +464,92 @@ body{
     height: 100%;
     overflow-y: auto;
 }
+summary>.fa-arrows{
+    color:rgb(29,118,192);
+}
+summary>.fa-thumb-tack{
+    color:#F37500;
+}
+summary>.fa-user-o{
+    color:rgb(76, 150, 137);
+}
+summary>.fa-cloud{
+    color:rgb(255,204,82);
+}
+summary>.fa-bell-o{
+    color:rgb(215,43,75);
+}
 .info{
     padding-top: 10px;
     font-size: 10.5pt;
     color:rgb(114,114,114);
     padding-right: 10px;
 }
-typicalAB:focus{
+details summary::-webkit-details-marker { 
+    display: none;
+}
+details, summary { 
+    display: block;
+    border:none;
     outline: 0;
+  }
+
+details summary:after {
+    float: right;
+    content: " ► ";
+}
+details[open] summary:after {
+    float: right;
+    content: " ▼ ";
+}
+details[open] summary{
+    filter: brightness(85%);
 }
 .msg:hover{
     background-color: rgb(249,249,249);
 }
+.Channel-Details>div{
+    padding-top: 10px;
+    font-size: 10.5pt;
+    color:#333333;
+    padding-right: 10px;
+}
+.Channel-Details>div>div>i{
+    padding-left:4px;
+    color:rgb(160,160,160);
+    font-size: 9pt;
+}
+.Channel-Details>div>div{
+    display: flex;
+}
+.Channel-Details>div>div>*{
+    display:block;
+    align-self: center;
+}
+.Channel-Details>div>div>img{
+    margin-right:5px;
+}
+.Channel-Details>div>b{
+    color:rgb(80,80,80);
+    font-size: 10pt;
+}
+.Members>div>div{
+    color:rgb(80,80,80);
+    font-size: 10.5pt;
+    display: flex;
+    margin-bottom: 8px;
+}
+.Members>div>div>*{
+    display:block;
+    margin-left:3px;
+    align-self: center;
+}
+.Members>div>div>i{
+    font-size:9.5pt;
+    color:rgb(160,160,160);
+}
+.Members>div{
+    padding-top: 18px;
+    font-size:11pt;
+}
+

@@ -8,12 +8,18 @@
 </head>
 <link rel="stylesheet" type="text/css" href="cssreset.css" />
 <link rel="stylesheet" type="text/css" href="New.css" />
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
 
 <body>
 <div class="window">
     <div id="menu">
         <div id="top" class="Shadow ch1 pen">
-            <h3 id="companyName">AIS <span class="ic1 ic4">&#709</span></h3>
+
+            <h3 id="companyName">AIS 
+                <span class="ic1 ic4">&#709</span>
+                <i class="fa fa-bell-o Frght"></i>
+            </h3>
+            
             <span class="R1"><span class="ic5 ic3">&#9679</span> aleksey.novik</span>
         </div>
         <div id="mid">
@@ -21,7 +27,7 @@
                 <span>All Threads<span>
             </div>
             <div id="channels" class="ch3">
-                <span class="ch1 ch2 bright pen">Channels</span>
+                <span class="ch1 ch2 bright pen">Channels</span><i class="fa fa-plus-circle Frght faplus pen"></i>
                 <div class="ch1 ch2 Shadow first pen"><span class="ic1">#</span> books</div>
                 <div class="ch1 ch2 Shadow pen"><span class="ic1">#</span> english</div>
                 <div class="ch1 ch2 Shadow activ pen"><span class="ic2">#</span>  net</div>
@@ -29,13 +35,13 @@
             </div>
 
             <div id="direct" class="ch3">
-                <span class="ch1 ch2 bright pen">Direct Message</span>
+                <span class="ch1 ch2 bright pen">Direct Message</span><i class="fa fa-plus-circle Frght faplus pen"></i>
                 <div class="ch1 ch2 Shadow first pen"><span class="ic3 ic4">❤</span> slackbot</div>
                 <div class="ch1 ch2 Shadow pen"><span class="ic5 ic3">&#9679</span> aleksey.novik</div>
             </div>
 
             <div id="Apps" class="ch3 ch2 ch1 bright pen">
-                <span>Apps<span>
+                <span>Apps<span><i class="fa fa-plus-circle Frght"></i>
             </div>
 
         </div>
@@ -59,8 +65,8 @@
             </div>
             <div class="topHolstRight">
                     <div id="phoneTHR">☎</div>
-                    <div id="helpTHR">ⓘ</div>
-                    <div id="setttingsTHR">🛠</div>
+                    <div id="helpTHR" class="pen">ⓘ</div>
+                    <div id="setttingsTHR" class="pen">🛠</div>
                     <input id="inputFind" type="text" name="lname" placeholder=" 🔍 Search">
                     <div id="atTHD" class="pen">@</div>
                     <div id="starTHD" class="pen"><b>☆</b></div>
@@ -94,6 +100,23 @@
                     <p class="msgSText">
                         joined #net along with amokin.
                     </p>
+                    <div class="btnMsg">
+                        <div class="btnMsgAdd gr pen">
+                            <center>
+                                <i class="fa fa-user-plus"></i>
+                            </center>
+                        </div>
+                        <div class="btnMsgShare gr pen">
+                            <center>
+                                <i class="fa fa-reply" aria-hidden="true"></i>
+                            </center>
+                        </div>
+                        <div class="btnMsgAction pen">
+                            <center>
+                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sprt">
@@ -143,18 +166,59 @@
         </div>
     <div id="aboutBlock">
         <div id="firstAB">
-            <h3>About #net</h3>
+            <h3>About #net <i class="fa fa-times Frght" aria-hidden="true"></i></h3>
         </div>
         <div class="typicalABblock">
-            <details class="typicalAB">
-                    <summary>Channel Details</summary>
+            <details class="typicalAB Channel-Details">
+                    <summary><i class="fa fa-info-circle" aria-hidden="true"></i> Channel Details</summary>
+                    <div>
+                        <b>Purpose</b><br><br>
+                        <a href="">Set a channel purpose</a><br><br>
+                        <b>Created</b><br><br>
+                        <p>Created by ilya.mokin on August 31, 2017</p><br>
+                        <b>Most active members</b><br><br>
+                        <div>
+                            <img class="avatar" src="user_user.png"  height="35px" width="35px">
+                            <b>user.user</b><i class="fa fa-circle-o" aria-hidden="true"></i>
+                        </div>
+                        
+                    </div>
             </details>
             <details class="typicalAB">
-                <summary>Highlights</summary>
+                <summary><i class="fa fa-arrows" aria-hidden="true"></i> Highlights</summary>
                     <div class="info">
                         <i><b>Nothing yet.</b> When this channel gets a bit more active, check back here.</i>
                     </div>
-            </details>        
+            </details>
+            <details class="typicalAB">
+                <summary><i class="fa fa-thumb-tack" aria-hidden="true"></i> Pinned Items</summary>
+                    <div class="info">
+                        <i>No items have been pinned yet! Open the context menu on important messages or files and choose Pin to #net … to stick them here.</i>
+                    </div>
+            </details>
+            <details class="typicalAB Members">
+                    <summary><i class="fa fa-user-o" aria-hidden="true"></i> 9 Members</summary>
+                        <div>
+                            <div>
+                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                <img class="avatar" src="user_user.png"  height="20px" width="20px">
+                                <b>user.user</b>
+                            </div>
+                            <a href="">Invite more people …</a>
+                        </div>
+            </details>     
+            <details class="typicalAB">
+                <summary><i class="fa fa-cloud" aria-hidden="true"></i> Shared Files</summary>
+                    <div class="info">
+                        <i>There are no files to see here right now! But there could be – drag and drop any file into the message pane to add it to this conversation.</i>
+                    </div>
+            </details>
+            <details class="typicalAB">
+                    <summary><i class="fa fa-bell-o" aria-hidden="true"></i> Notification Preferences</summary>
+                        <div class="info">
+                            <i><b>Nothing yet.</b> When this channel gets a bit more active, check back here.</i>
+                        </div>
+            </details>                     
         </div>
     </div>
     <!-- div.some-class>div.abzac*2>div.item*5 -->
