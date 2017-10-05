@@ -221,7 +221,10 @@ body{
         border: 6px solid transparent;
         border-bottom: 6px solid black; 
 }
-.topHolstLeft,topHolstRight>div{
+.topHolstRight>div{
+    position: relative;
+}
+.topHolstLeft>div{
     position: relative;
 }
 .starTHL:hover{
