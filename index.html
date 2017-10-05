@@ -10,7 +10,18 @@
 <link rel="stylesheet" type="text/css" href="cssreset.css" />
 <link rel="stylesheet" type="text/css" href="New.css" />
 <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
+<!-- styles needed by jScrollPane -->
+<link type="text/css" href="jquery.jscrollpane.css" rel="stylesheet" media="all" />
 
+<!-- latest jQuery direct from google's CDN -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="jquery.mousewheel.js"></script>
+
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="jquery.jscrollpane.min.js"></script>
 <body>
     <div class="window">
         <div id="menu">
@@ -28,7 +39,7 @@
                     <span>All Threads<span>
             </div>
             <div id="channels" class="ch3">
-                <span class="ch1 ch2 bright pen">Channels</span><i class="fa fa-plus-circle Frght faplus pen"></i>
+                <span class="ch1 ch2 bright pen">Channels</span><i aria-hidden="true" class="fa fa-plus-circle Frght faplus pen"></i>
                     <div class="ch1 ch2 Shadow first pen"><span class="ic1">#</span> books</div>
                     <div class="ch1 ch2 Shadow pen"><span class="ic1">#</span> english</div>
                     <div class="ch1 ch2 Shadow activ pen"><span class="ic2">#</span> net</div>
@@ -313,6 +324,8 @@
         </div>
         <!-- div.some-class>div.abzac*2>div.item*5 -->
     </div>
+    <script>
+            $('.chats').jScrollPane();
+    </script>
 </body>
-
 </html>
